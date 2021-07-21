@@ -1,0 +1,15 @@
+.search__form button {
+  display: block;
+  border: 1px solid gray;
+}
+.search__form button:hover {
+  background-color: #64ccf5;
+  border: 1px solid transparent;
+}
+.search__form button img {
+  display: block;
+  max-width: 20px;
+}
+.search__form .form-group {
+  display: flex;
+}

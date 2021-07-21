@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 20px 20px 50px;
+  border-bottom: 2px solid gray;
+}
+.header__title {
+  font-size: 2em;
+  text-transform: uppercase;
+}

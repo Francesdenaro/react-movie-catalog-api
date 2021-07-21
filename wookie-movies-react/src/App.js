@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as axios from 'axios';
-
+import Header from './components/UI/Header';
 
 const App = () => {
 
@@ -21,10 +21,14 @@ const App = () => {
 
 
   return (
-    <div className='container'>
-      <ul>
-        {!isLoading && items.movies.map(movie => <li key={movie.id}>{movie.title}</li>)}
-      </ul>
+    <div>
+      <Header />
+      
+      {
+      //<ul>
+        //{!isLoading && items.movies.map(movie => <li key={movie.id}>{movie.title}</li>)}
+      //</ul>
+      }
     </div>
   );
 }
