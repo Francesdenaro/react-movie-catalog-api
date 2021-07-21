@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as axios from 'axios';
 import Header from './components/UI/Header';
+import MoviesList from './components/movies/MoviesList';
 
 const App = () => {
 
@@ -23,7 +24,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      
+      <MoviesList />
       {
       //<ul>
         //{!isLoading && items.movies.map(movie => <li key={movie.id}>{movie.title}</li>)}
