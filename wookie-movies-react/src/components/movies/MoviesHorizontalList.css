@@ -1,0 +1,37 @@
+.horizontalList__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+.horizontalList__title {
+  color: white;
+}
+
+.horizontalList__wrapper .rec.rec-arrow {
+  border-radius: 50%;
+  color: white;
+  background-color: #00ccff;
+}
+.horizontalList__wrapper .rec.rec-arrow:hover:enabled ,
+.horizontalList__wrapper .rec.rec-arrow:hover {
+  color:#00ccff;
+  border: none;
+  background-color: white;
+}
+/* hide disabled buttons */
+.horizontalList__wrapper .rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+.horizontalList__wrapper .rec-arrow:focus:enabled,
+.horizontalList__wrapper .rec-arrow:focus {
+  outline: none;
+  background-color: #00ccff;
+}
+.horizontalList__wrapper .rec-dot {
+  background-color: white;
+}
+.horizontalList__wrapper .rec-dot_active,
+.horizontalList__wrapper .rec-dot:hover,
+.horizontalList__wrapper .rec-dot:focus {
+  background-color: #00ccff;
+  box-shadow: none;
+}

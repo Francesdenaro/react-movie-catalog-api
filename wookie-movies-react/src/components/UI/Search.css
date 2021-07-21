@@ -1,9 +1,13 @@
+.search__form input {
+  border-radius: 0;
+}
 .search__form button {
   display: block;
-  border: 1px solid gray;
+  border-radius: 0;
+  border: 1px solid white;
 }
 .search__form button:hover {
-  background-color: #64ccf5;
+  background-color: white;
   border: 1px solid transparent;
 }
 .search__form button img {

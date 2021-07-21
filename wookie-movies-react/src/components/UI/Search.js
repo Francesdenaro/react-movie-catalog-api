@@ -1,5 +1,5 @@
 import React from 'react'
-import searchIcon from '../../search.png'
+import searchIcon from '../../img/search.png'
 import './Search.css';
 
 const Search = () => {

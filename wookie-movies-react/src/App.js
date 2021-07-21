@@ -8,6 +8,7 @@ const App = () => {
   axios.defaults.headers.common['Authorization'] = 'Bearer Wookie2019';
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  let genres = [];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,16 +21,20 @@ const App = () => {
     fetchData();
   }, []);
 
-
+  const movieGenres = () => {
+    if(!isLoading) {
+      items.movies.forEach(movie => {
+        genres = [].concat(genres, movie.genres)
+      });
+      genres = genres.filter((genre, index, self) => index === self.indexOf(genre)) 
+    }
+    console.log(genres)
+  }
+  movieGenres();
   return (
     <div>
       <Header />
-      <MoviesList />
-      {
-      //<ul>
-        //{!isLoading && items.movies.map(movie => <li key={movie.id}>{movie.title}</li>)}
-      //</ul>
-      }
+      <MoviesList isLoading={isLoading} genres={genres} movies={items.movies}/>
     </div>
   );
 }
