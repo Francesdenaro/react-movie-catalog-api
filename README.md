@@ -6,11 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Navigate to the project directory with:
 
-# `cd wookie-movies-react`
+#### `cd wookie-movies-react`
 
 and start the developmente server with
 
-# `npm start`
+#### `npm start`
 
 ### Description
 
