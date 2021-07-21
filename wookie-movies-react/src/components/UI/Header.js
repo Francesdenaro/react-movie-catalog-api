@@ -6,13 +6,13 @@ import Search from './Search';
 import './Header.css';
 
 
-const Header = () => {
+const Header = ({getQuery}) => {
   return (
     <header className="header">
       <Link to="/">
         <h1 className="header__title">Wookie<br/>Movies</h1>
       </Link>
-      <Search />
+      <Search getQuery={getQuery}/>
     </header>
   )
 }
