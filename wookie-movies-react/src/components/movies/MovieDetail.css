@@ -1,0 +1,26 @@
+.movieDetail {
+  display: flex;
+  padding-top: 100px;
+}
+.movieDetail__details {
+  margin-left: 50px;
+  color: white;
+}
+.movieDetail .details__header .header__title {
+  margin-bottom: 30px;
+}
+
+
+.movieDetail .details__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieDetail .details__description {
+  margin: 30px auto;
+}
+.movieDetail .details__button {
+  font-weight: bold;
+  color: white;
+  background-color: #00ccff;
+}

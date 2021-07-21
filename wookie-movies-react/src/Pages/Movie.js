@@ -1,10 +1,8 @@
 import React from 'react'
+import MovieDetail from '../components/movies/MovieDetail'
+
 const Movie = ({movie}) => {
-  return (
-    <div>
-      {movie.title}
-    </div>
-  )
+  return <MovieDetail movie={movie}/>
 }
 
 export default Movie
