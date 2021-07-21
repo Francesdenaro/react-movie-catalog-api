@@ -4,7 +4,7 @@ import './MovieThumbnail.css';
 const MovieThumbnail = ({movie}) => {
   return (
     <div>
-      <img className="thumbnail" src={movie.backdrop} />
+      <img className="thumbnail" src={movie.backdrop} alt={movie.title} />
     </div>
   )
 }

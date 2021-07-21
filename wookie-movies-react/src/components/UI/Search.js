@@ -7,7 +7,7 @@ const Search = () => {
     <form className="search__form">
       <div className="form-group">
         <input className="form-control"/>
-        <button className="btn"><img src={searchIcon}/></button>
+        <button className="btn"><img src={searchIcon} alt="Search"/></button>
       </div>
     </form>
   )

@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
-import * as axios from 'axios';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import axios from 'axios';
+
+import Home from './Pages/Home';
+import Movie from './Pages/Movie';
 import Header from './components/UI/Header';
-import MoviesList from './components/movies/MoviesList';
 
 const App = () => {
 
@@ -22,19 +25,29 @@ const App = () => {
   }, []);
 
   const movieGenres = () => {
-    if(!isLoading) {
+    if (!isLoading) {
       items.movies.forEach(movie => {
         genres = [].concat(genres, movie.genres)
       });
-      genres = genres.filter((genre, index, self) => index === self.indexOf(genre)) 
+      return genres = genres.filter((genre, index, self) => index === self.indexOf(genre))
     }
-    console.log(genres)
   }
-  movieGenres();
+
   return (
-    <div>
-      <Header />
-      <MoviesList isLoading={isLoading} genres={genres} movies={items.movies}/>
+    <div className="appWrapper">
+      <Router>
+        <Header />
+        <Switch>
+          <Route path='/' exact >
+            <Home isLoading={isLoading} movieGenres={movieGenres()} items={items.movies} />
+          </Route>
+          {!isLoading && items.movies.map(movie => (
+            <Route key={movie.id} path={`/${movie.slug}`}>
+              <Movie movie={movie}/>
+            </Route>
+          ))}
+        </Switch>
+      </Router>
     </div>
   );
 }

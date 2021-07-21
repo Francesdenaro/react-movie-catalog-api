@@ -1,12 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Search from './Search';
+
 import './Header.css';
 
 
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="header__title">Wookie<br/>Movies</h1>
+      <Link to="/">
+        <h1 className="header__title">Wookie<br/>Movies</h1>
+      </Link>
       <Search />
     </header>
   )
