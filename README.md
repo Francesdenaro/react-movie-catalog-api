@@ -38,15 +38,3 @@ You are the owner of a movie theater in **Thikkiiana City,** on the Wookiee home
 -   Bonus: Use the movies backdrop image creatively
 -   Bonus: Use the movies slug for routing
 
-### Useful Links
-
-[React Docs](https://reactjs.org/docs/context.html)
-
-### CodeSubmit
-
-Please organize, design, test and document your code as if it were
-going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
-
-All the best and happy coding,
-
-The CodeSubmit Team
