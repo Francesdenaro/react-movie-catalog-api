@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Search from './Search';
-
 import './Header.css';
 
 
@@ -12,7 +11,12 @@ const Header = ({getQuery}) => {
       <Link to="/">
         <h1 className="header__title">Wookie<br/>Movies</h1>
       </Link>
-      <Search getQuery={getQuery}/>
+      <nav>
+        <Link to={`/bookmarks`}>
+          <span className="btn">Bookmarks</span>
+        </Link>
+        <Search getQuery={getQuery}/>
+      </nav>
     </header>
   )
 }

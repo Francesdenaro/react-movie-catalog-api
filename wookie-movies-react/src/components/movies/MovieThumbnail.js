@@ -12,7 +12,9 @@ const MovieThumbnail = ({movie}) => {
         <img className="thumbnail__image" src={movie.backdrop} alt={movie.title} />
         {showOverlay && 
         <div className="thumbnail__overlay">
-          <h3 className="overlay__title">{movie.title}</h3>
+          <h3 className="overlay__title">
+            {movie.title}
+          </h3>
         </div>}
       </Link>
     </div>

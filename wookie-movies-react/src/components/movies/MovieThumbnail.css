@@ -1,5 +1,6 @@
 .thumbnail {
   position: relative;
+  display: inline-block;
   height: auto;
 }
 .thumbnail__image {

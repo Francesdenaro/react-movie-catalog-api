@@ -11,3 +11,21 @@
   color: white;
   text-transform: uppercase;
 }
+
+.header nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.header nav span {
+  font-weight: bold;
+  color: white; 
+  text-transform: uppercase;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.header nav span:hover {
+  background-color: white;
+  color: #00ccff;
+}

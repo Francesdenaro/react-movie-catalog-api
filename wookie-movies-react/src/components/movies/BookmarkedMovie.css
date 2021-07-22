@@ -1,0 +1,13 @@
+.bookmarks {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.bookmarks .thumbnail {
+  margin-top: 50px;
+}
+.bookmarks .thumbnail:not(:last-child) {
+  margin-right: 50px;
+}

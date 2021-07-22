@@ -19,8 +19,20 @@
 .movieDetail .details__description {
   margin: 30px auto;
 }
-.movieDetail .details__button {
+.movieDetail .details__backhome {
+  font-weight: bold;
+  background-color: white;
+  color: #00ccff;
+}
+.movieDetail .details__bookmark {
   font-weight: bold;
   color: white;
   background-color: #00ccff;
+  transition: 0.5s;
+}
+.movieDetail .details__bookmark:hover,
+.movieDetail .details__bookmark.bookmarked {
+  font-weight: bold;
+  background-color: white;
+  color: #00ccff;
 }
